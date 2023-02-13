@@ -1,0 +1,33 @@
+Algoritmo sin_titulo
+	Definir A Como Entero;
+	Definir B Como Entero;
+	Definir C Como Entero;
+	
+	
+	Escribir "Ingresa el valor A:";
+	Leer A;
+	Escribir "Ingresa el valor B:";
+	Leer B;
+	Escribir "Ingresar el valor C:";
+	Leer C;
+	
+	Si(A>=B y A>=C)
+		Escribir "Es el mayor";
+		Imprimir A;
+	SiNo
+		Si(B>C)
+			Escribir "El mayor es:";
+			Imprimir B;
+		SiNo
+			Escribir "El mayor es:";
+			Imprimir C;
+		FinSi
+	FinSi
+	si(A=B)
+		Escribir "Hay valores repetidos";
+		
+	FinSi
+	Si(A=C)
+		Escribir "Hay valores repetidos";
+	FinSi
+FinAlgoritmo

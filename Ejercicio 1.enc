@@ -1,0 +1,53 @@
+Algoritmo sin_titulo
+	Definir A Como Entero
+	Definir B Como Entero
+	Definir C Como Entero
+	Definir Numero_Mayor Como Entero
+	Definir Numero_Menor Como Entero
+	
+	Escribir "Ingresa el primer numero";
+	Leer A;
+	Escribir "Ingresa el primer numero";
+	Leer B;
+	Escribir "Ingresa el primer numero";
+	Leer C;
+	
+	Si A > B && A > C
+		Numero_Mayor = A;
+		si B > C
+			Numero_Menor = C;
+		SiNo
+			Numero_Menor = B;
+		FinSi
+		
+	FinSi
+	
+	Si B > A && B > C
+		Numero_Mayor = B;
+		si A > C
+			Numero_Menor = C;
+		SiNo
+			Numero_Menor = A;
+		FinSi
+		
+	FinSi
+	
+	Si C > A && A > B
+		Numero_Mayor = A;
+		si A > B
+			Numero_Menor = B;
+		SiNo
+			Numero_Menor = A;
+		FinSi
+		
+	FinSi
+	
+	
+	Si A <> B && B <> C
+		Escribir "El numero mayor es: ", Numero_Mayor
+		Escribir "El numero menor es: ", Numero_Menor
+	SiNo
+		Escribir " Numero repetido ";
+	FinSi
+	
+FinAlgoritmo
